@@ -1,0 +1,13 @@
+name: Subway
+title: Subway
+username:
+account: ahando2
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5614107
+bundleId: 5559867
+url: https://ahando2.shinyapps.io/Subway/
+when: 1644395049.48277
+lastSyncTime: 1644395049.48277
+asMultiple: FALSE
+asStatic: FALSE

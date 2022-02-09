@@ -1,10 +1,9 @@
-setwd("D:/ahando2/classes/SPRING 2022/CS 424/Project/Project 1/Shiny")
-
 library(shiny)
 library(shinydashboard)
 library(ggplot2)
 library(DT)
 library(lubridate)
+library(scales)
 
 # assume all of the tsv files in this directory are data of the same kind that I want to visualize
 temp = list.files(pattern="*.tsv")
@@ -16,7 +15,6 @@ CTA_daily <- CTA_daily[complete.cases(CTA_daily), ]
 CTA_daily$date <- ymd(CTA_daily$date)
 
 # convert the station_id, rides, month, day, year from int to numbers
-CTA_daily$station_id <- as.numeric(CTA_daily$station_id)
 CTA_daily$rides <- as.numeric(CTA_daily$rides)
 
 # Create the menu items to select the different years and the different stations
@@ -213,6 +211,7 @@ server <- function(input, output) {
   
   output$Tab1 <- renderText({ input$StationName1 })
   output$Tab2 <- renderText({ input$StationName2 })
+  
   # calculate the values one time and re-use them in multiple charts to speed things up
   stationNameReactive1 <- reactive({subset(CTA_daily, stationname == input$StationName1)})
   stationNameandYearsReactive1 <- reactive({subset(CTA_daily, year(date) == input$Year1 & stationname == input$StationName1)})
