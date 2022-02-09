@@ -20,13 +20,7 @@ CTA_daily$station_id <- as.numeric(CTA_daily$station_id)
 CTA_daily$rides <- as.numeric(CTA_daily$rides)
 
 # Create the menu items to select the different years and the different stations
-listNamesRaw <- c(colnames(CTA_daily))
-listNames <- listNamesRaw[listNamesRaw != "date"]
 years<-c(2001:2021)
-# months<-c(1:12)
-# months_name<-c("January","February","March","April","May","June","July","August","September","October","November","December")
-# days<-c(2001:2021)
-# days_of_week<-c(2001:2021)
 station_names <- c("UIC-Halsted","O'Hare Airport","Damen/Milwaukee")
 
 # Create the shiny dashboard
