@@ -1,0 +1,11 @@
+name: shiny
+title:
+username:
+account: ahando2
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5613936
+bundleId: 5559781
+url: https://ahando2.shinyapps.io/shiny/
+when: 1644393125.55933
+lastSyncTime: 1644393125.55933
