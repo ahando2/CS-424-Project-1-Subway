@@ -355,7 +355,7 @@ server <- function(input, output) {
   })
   
   
-  # show a bar chart of entries per Day at UIC Halsted
+  # show a bar chart of entries per Day at StationName2
   output$hist7 <- renderPlot({
     oneYear <- stationNameandYearsReactive2()
     
