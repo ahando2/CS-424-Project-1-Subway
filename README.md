@@ -1,4 +1,4 @@
-# CS-424-Project-1-Subway
+# CS 424 Project 1 Subway
 
 the project consist of data processing code and the shiny app.
 
