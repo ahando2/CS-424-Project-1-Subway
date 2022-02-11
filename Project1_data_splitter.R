@@ -1,7 +1,5 @@
 library(lubridate)
 
-setwd("D:/ahando2/classes/SPRING 2022/CS 424/Project/Project 1")
-
 CTA_daily <- read.table(file = "CTA_-_Ridership_-__L__Station_Entries_-_Daily_Totals.tsv",sep='\t',quote="", header = TRUE)
 
 # change first column name from `ï..station_id` to `station_id`
