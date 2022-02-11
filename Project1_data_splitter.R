@@ -26,7 +26,8 @@ station_names <- c("UIC-Halsted","O'Hare Airport","Damen/Milwaukee")
 # save data for these 3 stations in each own files
 for (station_name in station_names) {
   CTA_subset <- subset(CTA_daily , stationname == station_name)
-  file_name <- ifelse(station_name == "Damen/Milwaukee","Shiny/Damen_Milwaukee",paste('Subway/', station_name, sep=""))
+  file_name <- ifelse(station_name == "Damen/Milwaukee","Subway/Damen_Milwaukee",paste('Subway/', station_name, sep=""))
   write.table(CTA_subset, file=paste(file_name, ".tsv", sep=""), quote=FALSE, sep='\t')
   
 }
+
