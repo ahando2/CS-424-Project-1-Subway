@@ -39,8 +39,8 @@ ui <- dashboardPage(skin = "black",
         fluidRow(
           mainPanel(
             fluidRow(
-              column(2,selectInput("StationName1", "Select the station to visualize", station_names, selected = "UIC-Halsted"))),
-              column(2,selectInput("Year1", "Select the year to visualize", years, selected = 2021)),
+              column(2,selectInput("StationName1", "Select the station to visualize", station_names, selected = "UIC-Halsted")),
+              column(2,selectInput("Year1", "Select the year to visualize", years, selected = 2021))),
              h2(textOutput("Tab1")),
              tabsetPanel(
               tabPanel("All Year", 
@@ -114,8 +114,8 @@ ui <- dashboardPage(skin = "black",
             ),style='width: 100%; padding-bottom:20px'),
           mainPanel(
             fluidRow(
-              column(2,selectInput("StationName2", "Select the station to visualize", station_names, selected = "O'Hare Airport"))),
-              column(2,selectInput("Year2", "Select the year to visualize", years, selected = 2021)),
+              column(2,selectInput("StationName2", "Select the station to visualize", station_names, selected = "O'Hare Airport")),
+              column(2,selectInput("Year2", "Select the year to visualize", years, selected = 2021))),
             h2(textOutput("Tab2")),
             tabsetPanel(
               tabPanel("All Year", 
