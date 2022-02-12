@@ -197,8 +197,8 @@ ui <- dashboardPage(skin = "black",
                  span("Written by Athalia Rochelle Handowo for CS 424 Project 1 Spring 2022 on Febuary. Data taken from Chicago Data Portal on February 4, 2022 ",
                   style = "white-space: pre-wrap"),
                  a(href="https://data.cityofchicago.org/Transportation/CTA-Ridership-L-Station-Entries-Daily-Totals/5neh-572f", "(link)"),
-                 span("."),
-                 style='display:flex;font-size:20px;')
+                 span(". The application display the number of rides/entries of the chosen stations per chosen timeframe and year."),
+                 style='display:block;font-size:20px;')
               ),style='padding-right: 15px;padding-left: 15px;'
               )
     )

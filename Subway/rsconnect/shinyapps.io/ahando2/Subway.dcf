@@ -5,9 +5,9 @@ account: ahando2
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5614107
-bundleId: 5568358
+bundleId: 5571349
 url: https://ahando2.shinyapps.io/Subway/
-when: 1644579133.8372
-lastSyncTime: 1644579133.8372
+when: 1644642531.41164
+lastSyncTime: 1644642531.41164
 asMultiple: FALSE
 asStatic: FALSE
